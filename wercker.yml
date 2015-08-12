@@ -1,10 +1,4 @@
-box: debian
-build:
-  steps:
-    - arjen/hugo-build:
-        version: 0.14
-        theme: hyde
-        flags: --buildDrafts=true
+box: wercker-box
 deploy:
   steps:
     - renlinx007/github-push:
