@@ -1,0 +1,17 @@
+box: debian
+build:
+  steps:
+    - arjen/hugo-build:
+        version: 0.14
+        theme: hyde
+        flags: --buildDrafts=true
+deploy:
+  steps:
+    - renlinx007/github-push:
+        version: 0.0.1
+        token: $GITHUB_TOKEN
+        uname: 'sideffect0'
+        email: 'mail3renjith@gmail.com'
+        repo: 'nubicz/nubicz.github.io'
+        branch: 'master'
+        basedir: 'public'
