@@ -1,6 +1,6 @@
 name: github-push
 version: 0.0.1
-description: deploy to github pages
+description: push to github
 keywords:
 - github
 - deploy
