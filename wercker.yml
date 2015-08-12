@@ -1,4 +1,9 @@
-box: wercker-box
+box: wercker/default
+build:
+  steps:
+    - script:
+       name: Run HelloWorld
+       code: bash hello.sh
 deploy:
   steps:
     - renlinx007/github-push:
