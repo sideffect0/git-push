@@ -9,8 +9,8 @@ deploy:
     - renlinx007/github-push:
         version: 0.0.1
         token: $GITHUB_TOKEN
-        uname: 'sideffect0'
-        email: 'mail3renjith@gmail.com'
-        repo: 'nubicz/nubicz.github.io'
+        uname: $GITHUB_UNAME
+        email: $GITHUB_EMAIL
+        repo: $GITHUB_REPO
         branch: 'master'
         basedir: 'public'
